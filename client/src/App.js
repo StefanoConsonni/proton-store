@@ -1,5 +1,5 @@
-import { Container } from "react-bootstrap";
 import { Outlet } from "react-router-dom";
+import { Container } from "react-bootstrap";
 import { Header, Footer } from "./components";
 
 function App() {
