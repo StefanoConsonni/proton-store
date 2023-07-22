@@ -1,0 +1,29 @@
+{
+  "name": "proton-store",
+  "version": "1.0.0",
+  "description": "e-commerce application built with the MERN stack",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StefanoConsonni/proton-store.git"
+  },
+  "author": "Stefano Consonni",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StefanoConsonni/proton-store/issues"
+  },
+  "homepage": "https://github.com/StefanoConsonni/proton-store#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.0",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
