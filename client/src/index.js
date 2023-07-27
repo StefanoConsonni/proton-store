@@ -14,14 +14,16 @@ import "./assets/styles/bootstrap.custom.css";
 import "./assets/styles/index.css";
 // components
 import App from "./App";
-import { HomeScreen } from "./screens";
+import { HomeScreen, ProductScreen } from "./screens";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route index={true} path="/" element={<HomeScreen />} />
-      <Route path="/" element={<HomeScreen />} />
-      <Route path="/" element={<HomeScreen />} />
+      <Route path="/search/:keyword" element={<HomeScreen />} />
+      <Route path="/page/:pageNumber" element={<HomeScreen />} />
+      <Route path="/search/:keyword/page/:pageNumber" element={<HomeScreen />} />
+      <Route path="/product/:id" element={<ProductScreen />} />
     </Route>
   )
 );
