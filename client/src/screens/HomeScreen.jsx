@@ -2,14 +2,7 @@ import { Row, Col } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import { useGetProductsQuery } from "../slices/productsApiSlice";
 import { Link } from "react-router-dom";
-import {
-  Product,
-  Loader,
-  Message,
-  Paginate,
-  ProductCarousel,
-  Meta,
-} from "../components";
+import { Product, Loader, Message, Paginate, ProductCarousel, Meta } from "../components";
 
 const HomeScreen = () => {
   const { pageNumber, keyword } = useParams();
@@ -32,9 +25,7 @@ const HomeScreen = () => {
       {isLoading ? (
         <Loader />
       ) : error ? (
-        <Message variant="danger">
-          {error?.data?.message || error.error}
-        </Message>
+        <Message variant="danger">{error?.data?.message || error.error}</Message>
       ) : (
         <>
           <Meta />
@@ -46,11 +37,7 @@ const HomeScreen = () => {
               </Col>
             ))}
           </Row>
-          <Paginate
-            pages={data.pages}
-            page={data.page}
-            keyword={keyword ? keyword : ""}
-          />
+          <Paginate pages={data.pages} page={data.page} keyword={keyword ? keyword : ""} />
         </>
       )}
     </>
