@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 import { Row, Col, ListGroup, Image, Card, Button } from "react-bootstrap";
 import { PayPalButtons, usePayPalScriptReducer } from "@paypal/react-paypal-js";
 import { toast } from "react-toastify";
-import { Message, Loader } from "../components/Message";
+import { Message, Loader } from "../components";
 import {
   useDeliverOrderMutation,
   useGetOrderDetailsQuery,

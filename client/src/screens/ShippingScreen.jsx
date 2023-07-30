@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Form, Button } from "react-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { FormContainer, CheckoutSteps } from "../components/FormContainer";
+import { FormContainer, CheckoutSteps } from "../components";
 import { saveShippingAddress } from "../slices/cartSlice";
 
 const ShippingScreen = () => {
@@ -13,9 +13,7 @@ const ShippingScreen = () => {
 
   const [address, setAddress] = useState(shippingAddress.address || "");
   const [city, setCity] = useState(shippingAddress.city || "");
-  const [postalCode, setPostalCode] = useState(
-    shippingAddress.postalCode || ""
-  );
+  const [postalCode, setPostalCode] = useState(shippingAddress.postalCode || "");
   const [country, setCountry] = useState(shippingAddress.country || "");
 
   const submitHandler = (e) => {

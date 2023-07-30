@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
 import { toast } from "react-toastify";
-import { Message, Loader, FormContainer } from "../../components/Message";
+import { Message, Loader, FormContainer } from "../../components";
 import {
   useGetProductDetailsQuery,
   useUpdateProductMutation,

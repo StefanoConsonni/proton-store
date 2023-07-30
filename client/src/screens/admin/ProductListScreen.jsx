@@ -3,7 +3,7 @@ import { Table, Button, Row, Col } from "react-bootstrap";
 import { FaEdit, FaPlus, FaTrash } from "react-icons/fa";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
-import { Message, Loader, Paginate } from "../../components/Message";
+import { Message, Loader, Paginate } from "../../components";
 import {
   useGetProductsQuery,
   useDeleteProductMutation,

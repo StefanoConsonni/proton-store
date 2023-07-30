@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { Link, useNavigate } from "react-router-dom";
 import { Form, Button } from "react-bootstrap";
 import { toast } from "react-toastify";
-import { Message, Loader, FormContainer } from "../../components/Message";
+import { Message, Loader, FormContainer } from "../../components";
 import { useGetUserDetailsQuery, useUpdateUserMutation } from "../../slices/usersApiSlice";
 
 const UserEditScreen = () => {

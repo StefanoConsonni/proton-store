@@ -2,7 +2,7 @@ import React from "react";
 import { LinkContainer } from "react-router-bootstrap";
 import { Table, Button } from "react-bootstrap";
 import { FaTrash, FaEdit, FaCheck, FaTimes } from "react-icons/fa";
-import { Message, Loader } from "../../components/Message";
+import { Message, Loader } from "../../components";
 import { useDeleteUserMutation, useGetUsersQuery } from "../../slices/usersApiSlice";
 import { toast } from "react-toastify";
 

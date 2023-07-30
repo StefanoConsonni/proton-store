@@ -6,7 +6,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { logout } from "../slices/authSlice";
 import { resetCart } from "../slices/cartSlice";
 import { useLogoutMutation } from "../slices/usersApiSlice";
-import SearchBox from "./";
+import SearchBox from "./SearchBox";
 import logo from "../assets/logo.png";
 
 const Header = () => {

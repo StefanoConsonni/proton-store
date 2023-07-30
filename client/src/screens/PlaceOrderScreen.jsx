@@ -3,7 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { toast } from "react-toastify";
 import { Button, Row, Col, ListGroup, Image, Card } from "react-bootstrap";
-import { Message, CheckoutSteps, Loader } from "../components/Message";
+import { Message, CheckoutSteps, Loader } from "../components";
 import { useCreateOrderMutation } from "../slices/ordersApiSlice";
 import { clearCartItems } from "../slices/cartSlice";
 

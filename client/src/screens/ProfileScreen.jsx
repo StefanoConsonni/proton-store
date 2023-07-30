@@ -4,7 +4,7 @@ import { LinkContainer } from "react-router-bootstrap";
 import { useDispatch, useSelector } from "react-redux";
 import { FaTimes } from "react-icons/fa";
 import { toast } from "react-toastify";
-import { Message, Loader } from "../components/Message";
+import { Message, Loader } from "../components";
 import { useProfileMutation } from "../slices/usersApiSlice";
 import { useGetMyOrdersQuery } from "../slices/ordersApiSlice";
 import { setCredentials } from "../slices/authSlice";
